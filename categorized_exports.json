@@ -1,0 +1,115 @@
+{
+    "Metals and Minerals": {
+        "products": [
+            "Aluminium",
+            "Aluminium oxide",
+            "Copper",
+            "Diamonds",
+            "Ferroalloys",
+            "Gold",
+            "Iron",
+            "Iron ore",
+            "Platinum",
+            "Titanium ore",
+            "Zinc"
+        ],
+        "color": "#B87333"
+    },
+    "Agriculture and Food": {
+        "products": [
+            "Beef",
+            "Cashews",
+            "Cigars",
+            "Cloves",
+            "Cocoa beans",
+            "Coconut oil",
+            "Coffee",
+            "Fish",
+            "Goats",
+            "Milk",
+            "Molluscs",
+            "Olive oil",
+            "Palm oil",
+            "Pearls",
+            "Shellfish",
+            "Soybean oil",
+            "Soybeans",
+            "Sugarcane",
+            "Sunflower seed oil",
+            "Tea",
+            "Tobacco",
+            "Vanilla",
+            "Water",
+            "Wood"
+        ],
+        "color": "#228B22"
+    },
+    "Energy": {
+        "products": [
+            "Coal",
+            "Petroleum",
+            "Energy"
+        ],
+        "color": "#FFD700"
+    },
+    "Textiles and Clothing": {
+        "products": [
+            "Clothes",
+            "Clothing",
+            "Footwear",
+            "Cotton"
+        ],
+        "color": "#FF69B4"
+    },
+    "Machinery and Electronics": {
+        "products": [
+            "Broadcasting equipment",
+            "Car parts",
+            "Cars",
+            "Computers",
+            "Data processing equipment",
+            "Dish washing machines",
+            "Integrated circuits",
+            "Medical instruments",
+            "Insulated wire"
+        ],
+        "color": "#4682B4"
+    },
+    "Pharmaceuticals and Chemicals": {
+        "products": [
+            "Fertilizers",
+            "Packaged medications",
+            "Vaccines",
+            "Soft drink concentrates"
+        ],
+        "color": "#FF6347"
+    },
+    "Luxury Goods and Jewelry": {
+        "products": [
+            "Automobile catalysts",
+            "Jewelry",
+            "Rum"
+        ],
+        "color": "#8B4513"
+    },
+    "Paper and Packaging": {
+        "products": [
+            "Paper",
+            "Plastic"
+        ],
+        "color": "#D3D3D3"
+    },
+    "Transport and Ships": {
+        "products": [
+            "Boats"
+        ],
+        "color": "#1E90FF"
+    },
+    "Other": {
+        "products": [
+            "ICT",
+            "Stone"
+        ],
+        "color": "#808080"
+    }
+}

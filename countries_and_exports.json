@@ -1,0 +1,1247 @@
+[
+    {
+        "ISO_A3": "IDN",
+        "Final Display Name": "Indonesia",
+        "Main Exports": "Coal"
+    },
+    {
+        "ISO_A3": "MYS",
+        "Final Display Name": "Malaysia",
+        "Main Exports": "Integrated circuits"
+    },
+    {
+        "ISO_A3": "CHL",
+        "Final Display Name": "Chile",
+        "Main Exports": "Copper"
+    },
+    {
+        "ISO_A3": "BOL",
+        "Final Display Name": "Bolivia",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "PER",
+        "Final Display Name": "Peru",
+        "Main Exports": "Copper"
+    },
+    {
+        "ISO_A3": "ARG",
+        "Final Display Name": "Argentina",
+        "Main Exports": "Soybeans"
+    },
+    {
+        "ISO_A3": "CYP",
+        "Final Display Name": "Cyprus",
+        "Main Exports": "Boats"
+    },
+    {
+        "ISO_A3": "ISR",
+        "Final Display Name": "Israel",
+        "Main Exports": "Diamonds"
+    },
+    {
+        "ISO_A3": "PSE",
+        "Final Display Name": "Palestine",
+        "Main Exports": "Stone"
+    },
+    {
+        "ISO_A3": "LBN",
+        "Final Display Name": "Lebanon",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "ETH",
+        "Final Display Name": "Ethiopia",
+        "Main Exports": "Coffee"
+    },
+    {
+        "ISO_A3": "SSD",
+        "Final Display Name": "South Sudan",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "SOM",
+        "Final Display Name": "Somalia",
+        "Main Exports": "Goats"
+    },
+    {
+        "ISO_A3": "MWI",
+        "Final Display Name": "Malawi",
+        "Main Exports": "Tobacco"
+    },
+    {
+        "ISO_A3": "TZA",
+        "Final Display Name": "United Republic of Tanzania",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "CHN",
+        "Final Display Name": "China",
+        "Main Exports": "Broadcasting equipment"
+    },
+    {
+        "ISO_A3": "SYR",
+        "Final Display Name": "Syria",
+        "Main Exports": "Olive oil"
+    },
+    {
+        "ISO_A3": "SUR",
+        "Final Display Name": "Suriname",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "GUF",
+        "Final Display Name": "France",
+        "Main Exports": "Packaged medications"
+    },
+    {
+        "ISO_A3": "GUY",
+        "Final Display Name": "Guyana",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "MAR",
+        "Final Display Name": "Morocco",
+        "Main Exports": "Fertilizers"
+    },
+    {
+        "ISO_A3": "ESH",
+        "Final Display Name": "Western Sahara",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "CRI",
+        "Final Display Name": "Costa Rica",
+        "Main Exports": "Medical instruments"
+    },
+    {
+        "ISO_A3": "NIC",
+        "Final Display Name": "Nicaragua",
+        "Main Exports": "Clothing"
+    },
+    {
+        "ISO_A3": "COG",
+        "Final Display Name": "Republic of the Congo",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "COD",
+        "Final Display Name": "Democratic Republic of the Congo",
+        "Main Exports": "Copper"
+    },
+    {
+        "ISO_A3": "BTN",
+        "Final Display Name": "Bhutan",
+        "Main Exports": "Ferroalloys"
+    },
+    {
+        "ISO_A3": "UKR",
+        "Final Display Name": "Ukraine",
+        "Main Exports": "Sunflower seed oil"
+    },
+    {
+        "ISO_A3": "BLR",
+        "Final Display Name": "Belarus",
+        "Main Exports": "Fertilizers"
+    },
+    {
+        "ISO_A3": "NAM",
+        "Final Display Name": "Namibia",
+        "Main Exports": "Copper"
+    },
+    {
+        "ISO_A3": "ZAF",
+        "Final Display Name": "South Africa",
+        "Main Exports": "Platinum"
+    },
+    {
+        "ISO_A3": "MAF",
+        "Final Display Name": "Saint Martin",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "SXM",
+        "Final Display Name": "Sint Maarten",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "OMN",
+        "Final Display Name": "Oman",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "UZB",
+        "Final Display Name": "Uzbekistan",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "KAZ",
+        "Final Display Name": "Kazakhstan",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "TJK",
+        "Final Display Name": "Tajikistan",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "LTU",
+        "Final Display Name": "Lithuania",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "BRA",
+        "Final Display Name": "Brazil",
+        "Main Exports": "Iron ore"
+    },
+    {
+        "ISO_A3": "URY",
+        "Final Display Name": "Uruguay",
+        "Main Exports": "Beef"
+    },
+    {
+        "ISO_A3": "MNG",
+        "Final Display Name": "Mongolia",
+        "Main Exports": "Copper"
+    },
+    {
+        "ISO_A3": "RUS",
+        "Final Display Name": "Russia",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "CZE",
+        "Final Display Name": "Czechia",
+        "Main Exports": "Cars"
+    },
+    {
+        "ISO_A3": "DEU",
+        "Final Display Name": "Germany",
+        "Main Exports": "Cars"
+    },
+    {
+        "ISO_A3": "EST",
+        "Final Display Name": "Estonia",
+        "Main Exports": "Wood"
+    },
+    {
+        "ISO_A3": "LVA",
+        "Final Display Name": "Latvia",
+        "Main Exports": "Wood"
+    },
+    {
+        "ISO_A3": "NOR",
+        "Final Display Name": "Norway",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "SWE",
+        "Final Display Name": "Sweden",
+        "Main Exports": "Cars"
+    },
+    {
+        "ISO_A3": "FIN",
+        "Final Display Name": "Finland",
+        "Main Exports": "Paper"
+    },
+    {
+        "ISO_A3": "VNM",
+        "Final Display Name": "Vietnam",
+        "Main Exports": "Broadcasting equipment"
+    },
+    {
+        "ISO_A3": "KHM",
+        "Final Display Name": "Cambodia",
+        "Main Exports": "Clothing"
+    },
+    {
+        "ISO_A3": "LUX",
+        "Final Display Name": "Luxembourg",
+        "Main Exports": "Iron"
+    },
+    {
+        "ISO_A3": "ARE",
+        "Final Display Name": "United Arab Emirates",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "-99",
+        "Final Display Name": "France",
+        "Main Exports": "Packaged medications"
+    },
+    {
+        "ISO_A3": "BEL",
+        "Final Display Name": "Belgium",
+        "Main Exports": "Vaccines"
+    },
+    {
+        "ISO_A3": "GEO",
+        "Final Display Name": "Georgia",
+        "Main Exports": "Copper"
+    },
+    {
+        "ISO_A3": "MKD",
+        "Final Display Name": "North Macedonia",
+        "Main Exports": "Automobile catalysts"
+    },
+    {
+        "ISO_A3": "ALB",
+        "Final Display Name": "Albania",
+        "Main Exports": "Footwear"
+    },
+    {
+        "ISO_A3": "AZE",
+        "Final Display Name": "Azerbaijan",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "SRB",
+        "Final Display Name": "Republic of Serbia",
+        "Main Exports": "Insulated wire"
+    },
+    {
+        "ISO_A3": "TUR",
+        "Final Display Name": "Turkey",
+        "Main Exports": "Cars"
+    },
+    {
+        "ISO_A3": "ESP",
+        "Final Display Name": "Spain",
+        "Main Exports": "Cars"
+    },
+    {
+        "ISO_A3": "LAO",
+        "Final Display Name": "Laos",
+        "Main Exports": "Energy"
+    },
+    {
+        "ISO_A3": "KGZ",
+        "Final Display Name": "Kyrgyzstan",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "ARM",
+        "Final Display Name": "Armenia",
+        "Main Exports": "Copper"
+    },
+    {
+        "ISO_A3": "DNK",
+        "Final Display Name": "Denmark",
+        "Main Exports": "Packaged medications"
+    },
+    {
+        "ISO_A3": "LBY",
+        "Final Display Name": "Libya",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "TUN",
+        "Final Display Name": "Tunisia",
+        "Main Exports": "Clothing"
+    },
+    {
+        "ISO_A3": "ROU",
+        "Final Display Name": "Romania",
+        "Main Exports": "Cars"
+    },
+    {
+        "ISO_A3": "HUN",
+        "Final Display Name": "Hungary",
+        "Main Exports": "Cars"
+    },
+    {
+        "ISO_A3": "SVK",
+        "Final Display Name": "Slovakia",
+        "Main Exports": "Cars"
+    },
+    {
+        "ISO_A3": "POL",
+        "Final Display Name": "Poland",
+        "Main Exports": "Car parts"
+    },
+    {
+        "ISO_A3": "IRL",
+        "Final Display Name": "Ireland",
+        "Main Exports": "ICT"
+    },
+    {
+        "ISO_A3": "GBR",
+        "Final Display Name": "United Kingdom",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "GRC",
+        "Final Display Name": "Greece",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "ZMB",
+        "Final Display Name": "Zambia",
+        "Main Exports": "Copper"
+    },
+    {
+        "ISO_A3": "SLE",
+        "Final Display Name": "Sierra Leone",
+        "Main Exports": "Titanium ore"
+    },
+    {
+        "ISO_A3": "GIN",
+        "Final Display Name": "Guinea",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "LBR",
+        "Final Display Name": "Liberia",
+        "Main Exports": "Iron ore"
+    },
+    {
+        "ISO_A3": "CAF",
+        "Final Display Name": "Central African Republic",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "SDN",
+        "Final Display Name": "Sudan",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "DJI",
+        "Final Display Name": "Djibouti",
+        "Main Exports": "Palm oil"
+    },
+    {
+        "ISO_A3": "ERI",
+        "Final Display Name": "Eritrea",
+        "Main Exports": "Zinc"
+    },
+    {
+        "ISO_A3": "AUT",
+        "Final Display Name": "Austria",
+        "Main Exports": "Cars"
+    },
+    {
+        "ISO_A3": "IRQ",
+        "Final Display Name": "Iraq",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "ITA",
+        "Final Display Name": "Italy",
+        "Main Exports": "Packaged medications"
+    },
+    {
+        "ISO_A3": "CHE",
+        "Final Display Name": "Switzerland",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "IRN",
+        "Final Display Name": "Iran",
+        "Main Exports": "Plastic"
+    },
+    {
+        "ISO_A3": "NLD",
+        "Final Display Name": "Netherlands",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "LIE",
+        "Final Display Name": "Liechtenstein",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "CIV",
+        "Final Display Name": "Ivory Coast",
+        "Main Exports": "Cocoa beans"
+    },
+    {
+        "ISO_A3": "MLI",
+        "Final Display Name": "Mali",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "SEN",
+        "Final Display Name": "Senegal",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "NGA",
+        "Final Display Name": "Nigeria",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "BEN",
+        "Final Display Name": "Benin",
+        "Main Exports": "Cotton"
+    },
+    {
+        "ISO_A3": "AGO",
+        "Final Display Name": "Angola",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "HRV",
+        "Final Display Name": "Croatia",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "SVN",
+        "Final Display Name": "Slovenia",
+        "Main Exports": "Packaged medications"
+    },
+    {
+        "ISO_A3": "QAT",
+        "Final Display Name": "Qatar",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "SAU",
+        "Final Display Name": "Saudi Arabia",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "BWA",
+        "Final Display Name": "Botswana",
+        "Main Exports": "Diamonds"
+    },
+    {
+        "ISO_A3": "ZWE",
+        "Final Display Name": "Zimbabwe",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "BGR",
+        "Final Display Name": "Bulgaria",
+        "Main Exports": "Copper"
+    },
+    {
+        "ISO_A3": "THA",
+        "Final Display Name": "Thailand",
+        "Main Exports": "Data processing equipment"
+    },
+    {
+        "ISO_A3": "IND",
+        "Final Display Name": "India",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "SMR",
+        "Final Display Name": "San Marino",
+        "Main Exports": "Dish washing machines"
+    },
+    {
+        "ISO_A3": "HTI",
+        "Final Display Name": "Haiti",
+        "Main Exports": "Clothes"
+    },
+    {
+        "ISO_A3": "DOM",
+        "Final Display Name": "Dominican Republic",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "TCD",
+        "Final Display Name": "Chad",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "KWT",
+        "Final Display Name": "Kuwait",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "SLV",
+        "Final Display Name": "El Salvador",
+        "Main Exports": "Clothing"
+    },
+    {
+        "ISO_A3": "GTM",
+        "Final Display Name": "Guatemala",
+        "Main Exports": "Clothing"
+    },
+    {
+        "ISO_A3": "TLS",
+        "Final Display Name": "East Timor",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "BRN",
+        "Final Display Name": "Brunei",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "MCO",
+        "Final Display Name": "Monaco",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "DZA",
+        "Final Display Name": "Algeria",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "MOZ",
+        "Final Display Name": "Mozambique",
+        "Main Exports": "Coal"
+    },
+    {
+        "ISO_A3": "SWZ",
+        "Final Display Name": "eSwatini",
+        "Main Exports": "Soft drink concentrates"
+    },
+    {
+        "ISO_A3": "BDI",
+        "Final Display Name": "Burundi",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "RWA",
+        "Final Display Name": "Rwanda",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "MMR",
+        "Final Display Name": "Myanmar",
+        "Main Exports": "Clothing"
+    },
+    {
+        "ISO_A3": "BGD",
+        "Final Display Name": "Bangladesh",
+        "Main Exports": "Clothing"
+    },
+    {
+        "ISO_A3": "AND",
+        "Final Display Name": "Andorra",
+        "Main Exports": "Cars"
+    },
+    {
+        "ISO_A3": "AFG",
+        "Final Display Name": "Afghanistan",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "MNE",
+        "Final Display Name": "Montenegro",
+        "Main Exports": "Aluminium"
+    },
+    {
+        "ISO_A3": "BIH",
+        "Final Display Name": "Bosnia and Herzegovina",
+        "Main Exports": "Energy"
+    },
+    {
+        "ISO_A3": "UGA",
+        "Final Display Name": "Uganda",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "CUB",
+        "Final Display Name": "Cuba",
+        "Main Exports": "Cigars"
+    },
+    {
+        "ISO_A3": "HND",
+        "Final Display Name": "Honduras",
+        "Main Exports": "Clothing"
+    },
+    {
+        "ISO_A3": "ECU",
+        "Final Display Name": "Ecuador",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "COL",
+        "Final Display Name": "Colombia",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "PRY",
+        "Final Display Name": "Paraguay",
+        "Main Exports": "Soybeans"
+    },
+    {
+        "ISO_A3": "PRT",
+        "Final Display Name": "Portugal",
+        "Main Exports": "Cars"
+    },
+    {
+        "ISO_A3": "MDA",
+        "Final Display Name": "Moldova",
+        "Main Exports": "Insulated wire"
+    },
+    {
+        "ISO_A3": "PRK",
+        "Final Display Name": "North Korea",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "TKM",
+        "Final Display Name": "Turkmenistan",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "JOR",
+        "Final Display Name": "Jordan",
+        "Main Exports": "Clothing"
+    },
+    {
+        "ISO_A3": "NPL",
+        "Final Display Name": "Nepal",
+        "Main Exports": "Soybean oil"
+    },
+    {
+        "ISO_A3": "LSO",
+        "Final Display Name": "Lesotho",
+        "Main Exports": "Diamonds"
+    },
+    {
+        "ISO_A3": "CMR",
+        "Final Display Name": "Cameroon",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "GAB",
+        "Final Display Name": "Gabon",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "NER",
+        "Final Display Name": "Niger",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "BFA",
+        "Final Display Name": "Burkina Faso",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "TGO",
+        "Final Display Name": "Togo",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "GHA",
+        "Final Display Name": "Ghana",
+        "Main Exports": "Gold"
+    },
+    {
+        "ISO_A3": "GNB",
+        "Final Display Name": "Guinea-Bissau",
+        "Main Exports": "Cashews"
+    },
+    {
+        "ISO_A3": "GIB",
+        "Final Display Name": "Gibraltar",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "USA",
+        "Final Display Name": "United States of America",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "CAN",
+        "Final Display Name": "Canada",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "MEX",
+        "Final Display Name": "Mexico",
+        "Main Exports": "Cars"
+    },
+    {
+        "ISO_A3": "BLZ",
+        "Final Display Name": "Belize",
+        "Main Exports": "Sugarcane"
+    },
+    {
+        "ISO_A3": "PAN",
+        "Final Display Name": "Panama",
+        "Main Exports": "Copper"
+    },
+    {
+        "ISO_A3": "VEN",
+        "Final Display Name": "Venezuela",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "PNG",
+        "Final Display Name": "Papua New Guinea",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "PAK",
+        "Final Display Name": "Pakistan",
+        "Main Exports": "Clothing"
+    },
+    {
+        "ISO_A3": "EGY",
+        "Final Display Name": "Egypt",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "YEM",
+        "Final Display Name": "Yemen",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "MRT",
+        "Final Display Name": "Mauritania",
+        "Main Exports": "Iron ore"
+    },
+    {
+        "ISO_A3": "KEN",
+        "Final Display Name": "Kenya",
+        "Main Exports": "Tea"
+    },
+    {
+        "ISO_A3": "GNQ",
+        "Final Display Name": "Equatorial Guinea",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "GMB",
+        "Final Display Name": "Gambia",
+        "Main Exports": "Cashews"
+    },
+    {
+        "ISO_A3": "HKG",
+        "Final Display Name": "Hong Kong S.A.R.",
+        "Main Exports": "Integrated circuits"
+    },
+    {
+        "ISO_A3": "VAT",
+        "Final Display Name": "Vatican",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "KOR",
+        "Final Display Name": "South Korea",
+        "Main Exports": "Integrated circuits"
+    },
+    {
+        "ISO_A3": "ATA",
+        "Final Display Name": "Antarctica",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "AUS",
+        "Final Display Name": "Australia",
+        "Main Exports": "Iron ore"
+    },
+    {
+        "ISO_A3": "GRL",
+        "Final Display Name": "Greenland",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "FJI",
+        "Final Display Name": "Fiji",
+        "Main Exports": "Water"
+    },
+    {
+        "ISO_A3": "NZL",
+        "Final Display Name": "New Zealand",
+        "Main Exports": "Milk"
+    },
+    {
+        "ISO_A3": "NCL",
+        "Final Display Name": "New Caledonia",
+        "Main Exports": "Ferroalloys"
+    },
+    {
+        "ISO_A3": "MDG",
+        "Final Display Name": "Madagascar",
+        "Main Exports": "Vanilla"
+    },
+    {
+        "ISO_A3": "PHL",
+        "Final Display Name": "Philippines",
+        "Main Exports": "Integrated circuits"
+    },
+    {
+        "ISO_A3": "LKA",
+        "Final Display Name": "Sri Lanka",
+        "Main Exports": "Clothing"
+    },
+    {
+        "ISO_A3": "CUW",
+        "Final Display Name": "Cura\u00e7ao",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "ABW",
+        "Final Display Name": "Aruba",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "BHS",
+        "Final Display Name": "The Bahamas",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "TCA",
+        "Final Display Name": "Turks and Caicos Islands",
+        "Main Exports": "Molluscs"
+    },
+    {
+        "ISO_A3": "TWN",
+        "Final Display Name": "Taiwan",
+        "Main Exports": "Integrated circuits"
+    },
+    {
+        "ISO_A3": "JPN",
+        "Final Display Name": "Japan",
+        "Main Exports": "Cars"
+    },
+    {
+        "ISO_A3": "SPM",
+        "Final Display Name": "Saint Pierre and Miquelon",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "ISL",
+        "Final Display Name": "Iceland",
+        "Main Exports": "Aluminium"
+    },
+    {
+        "ISO_A3": "PCN",
+        "Final Display Name": "Pitcairn Islands",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "PYF",
+        "Final Display Name": "French Polynesia",
+        "Main Exports": "Pearls"
+    },
+    {
+        "ISO_A3": "ATF",
+        "Final Display Name": "French Southern and Antarctic Lands",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "SYC",
+        "Final Display Name": "Seychelles",
+        "Main Exports": "Boats"
+    },
+    {
+        "ISO_A3": "KIR",
+        "Final Display Name": "Kiribati",
+        "Main Exports": "Fish"
+    },
+    {
+        "ISO_A3": "MHL",
+        "Final Display Name": "Marshall Islands",
+        "Main Exports": "Boats"
+    },
+    {
+        "ISO_A3": "TTO",
+        "Final Display Name": "Trinidad and Tobago",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "GRD",
+        "Final Display Name": "Grenada",
+        "Main Exports": "Fish"
+    },
+    {
+        "ISO_A3": "BES",
+        "Final Display Name": "Netherlands",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "VCT",
+        "Final Display Name": "Saint Vincent and the Grenadines",
+        "Main Exports": "Boats"
+    },
+    {
+        "ISO_A3": "BRB",
+        "Final Display Name": "Barbados",
+        "Main Exports": "Rum"
+    },
+    {
+        "ISO_A3": "LCA",
+        "Final Display Name": "Saint Lucia",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "MTQ",
+        "Final Display Name": "France",
+        "Main Exports": "Packaged medications"
+    },
+    {
+        "ISO_A3": "DMA",
+        "Final Display Name": "Dominica",
+        "Main Exports": "Medical instruments"
+    },
+    {
+        "ISO_A3": "GLP",
+        "Final Display Name": "France",
+        "Main Exports": "Packaged medications"
+    },
+    {
+        "ISO_A3": "UMI",
+        "Final Display Name": "United States Minor Outlying Islands",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "MSR",
+        "Final Display Name": "Montserrat",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "ATG",
+        "Final Display Name": "Antigua and Barbuda",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "KNA",
+        "Final Display Name": "Saint Kitts and Nevis",
+        "Main Exports": "Broadcasting equipment"
+    },
+    {
+        "ISO_A3": "VIR",
+        "Final Display Name": "United States Virgin Islands",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "BLM",
+        "Final Display Name": "Saint Barthelemy",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "PRI",
+        "Final Display Name": "Puerto Rico",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "AIA",
+        "Final Display Name": "Anguilla",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "VGB",
+        "Final Display Name": "British Virgin Islands",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "JAM",
+        "Final Display Name": "Jamaica",
+        "Main Exports": "Aluminium oxide"
+    },
+    {
+        "ISO_A3": "CYM",
+        "Final Display Name": "Cayman Islands",
+        "Main Exports": "Boats"
+    },
+    {
+        "ISO_A3": "BMU",
+        "Final Display Name": "Bermuda",
+        "Main Exports": "Boats"
+    },
+    {
+        "ISO_A3": "HMD",
+        "Final Display Name": "Heard Island and McDonald Islands",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "SHN",
+        "Final Display Name": "Saint Helena",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "REU",
+        "Final Display Name": "France",
+        "Main Exports": "Packaged medications"
+    },
+    {
+        "ISO_A3": "MUS",
+        "Final Display Name": "Mauritius",
+        "Main Exports": "Fish"
+    },
+    {
+        "ISO_A3": "MYT",
+        "Final Display Name": "France",
+        "Main Exports": "Packaged medications"
+    },
+    {
+        "ISO_A3": "COM",
+        "Final Display Name": "Comoros",
+        "Main Exports": "Cloves"
+    },
+    {
+        "ISO_A3": "STP",
+        "Final Display Name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+        "Main Exports": "Cocoa beans"
+    },
+    {
+        "ISO_A3": "CPV",
+        "Final Display Name": "Cabo Verde",
+        "Main Exports": "Fish"
+    },
+    {
+        "ISO_A3": "MLT",
+        "Final Display Name": "Malta",
+        "Main Exports": "Integrated circuits"
+    },
+    {
+        "ISO_A3": "JEY",
+        "Final Display Name": "Jersey",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "GGY",
+        "Final Display Name": "Guernsey",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "IMN",
+        "Final Display Name": "Isle of Man",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "ALA",
+        "Final Display Name": "\u00c5land",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "FRO",
+        "Final Display Name": "Faroe Islands",
+        "Main Exports": "Fish"
+    },
+    {
+        "ISO_A3": "CCK",
+        "Final Display Name": "Indian Ocean Territories",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "IOT",
+        "Final Display Name": "British Indian Ocean Territory",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "SGP",
+        "Final Display Name": "Singapore",
+        "Main Exports": "Integrated circuits"
+    },
+    {
+        "ISO_A3": "SJM",
+        "Final Display Name": "Norway",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "NFK",
+        "Final Display Name": "Norfolk Island",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "COK",
+        "Final Display Name": "Cook Islands",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "TON",
+        "Final Display Name": "Tonga",
+        "Main Exports": "Shellfish"
+    },
+    {
+        "ISO_A3": "WLF",
+        "Final Display Name": "Wallis and Futuna",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "WSM",
+        "Final Display Name": "Samoa",
+        "Main Exports": "Coconut oil"
+    },
+    {
+        "ISO_A3": "SLB",
+        "Final Display Name": "Solomon Islands",
+        "Main Exports": "Wood"
+    },
+    {
+        "ISO_A3": "TUV",
+        "Final Display Name": "Tuvalu",
+        "Main Exports": "Boats"
+    },
+    {
+        "ISO_A3": "MDV",
+        "Final Display Name": "Maldives",
+        "Main Exports": "Fish"
+    },
+    {
+        "ISO_A3": "NRU",
+        "Final Display Name": "Nauru",
+        "Main Exports": "Fish"
+    },
+    {
+        "ISO_A3": "FSM",
+        "Final Display Name": "Federated States of Micronesia",
+        "Main Exports": "Fish"
+    },
+    {
+        "ISO_A3": "SGS",
+        "Final Display Name": "South Georgia and the Islands",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "BVT",
+        "Final Display Name": "Norway",
+        "Main Exports": "Petroleum"
+    },
+    {
+        "ISO_A3": "FLK",
+        "Final Display Name": "Falkland Islands",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "VUT",
+        "Final Display Name": "Vanuatu",
+        "Main Exports": "Fish"
+    },
+    {
+        "ISO_A3": "NIU",
+        "Final Display Name": "Niue",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "ASM",
+        "Final Display Name": "American Samoa",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "PLW",
+        "Final Display Name": "Palau",
+        "Main Exports": "Computers"
+    },
+    {
+        "ISO_A3": "GUM",
+        "Final Display Name": "Guam",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "MNP",
+        "Final Display Name": "Northern Mariana Islands",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "BHR",
+        "Final Display Name": "Bahrain",
+        "Main Exports": "Aluminium"
+    },
+    {
+        "ISO_A3": "CXR",
+        "Final Display Name": "Indian Ocean Territories",
+        "Main Exports": null
+    },
+    {
+        "ISO_A3": "TKL",
+        "Final Display Name": "New Zealand",
+        "Main Exports": "Milk"
+    },
+    {
+        "ISO_A3": "MAC",
+        "Final Display Name": "Macao S.A.R",
+        "Main Exports": "Jewelry"
+    }
+]
