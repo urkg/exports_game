@@ -150,16 +150,20 @@ function initializeSelectorsAndUI() {
 // Populate the country selection dropdown
 function populateCountrySelector() {
     const countrySelect = document.getElementById('country-select');
-    countrySelect.innerHTML = '';
+    countrySelect.innerHTML = ''; // Clear the dropdown before adding new elements
 
-    countriesData
-        .filter(country => country['Final Display Name'])
-        .sort((a, b) => a['Final Display Name'].localeCompare(b['Final Display Name']))
-        .forEach(country => {
-            const option = new Option(country['Final Display Name'], country.ISO_A3);
-            countrySelect.appendChild(option);
-        });
+    // Filter out countries with null Main Exports, then sort by 'Final Display Name'
+    const validCountries = countriesData
+        .filter(country => country['Main Exports'] !== null && country['Final Display Name']) // Filter valid countries
+        .sort((a, b) => a['Final Display Name'].localeCompare(b['Final Display Name']));
 
+    // Populate the dropdown with valid country options
+    validCountries.forEach(country => {
+        const option = new Option(country['Final Display Name'], country.ISO_A3);
+        countrySelect.appendChild(option);
+    });
+
+    // Add event listener for country selection
     countrySelect.addEventListener('change', handleCountrySelection);
 }
 
