@@ -1,6 +1,4 @@
 // main.js
-// This script handles the logic of the country exports game,
-// including map loading, country selection, and export matching.
 
 // Variables to store game state
 let panZoomInstance;
@@ -165,6 +163,16 @@ function populateCountrySelector() {
     countrySelect.addEventListener('change', handleCountrySelection);
 }
 
+// Handle country selection from the dropdown
+function handleCountrySelection() {
+    const selectedISO = this.value;
+    const countryElement = document.getElementById(selectedISO);
+    if (countryElement) {
+        selectedCountry = countryElement; // Assign the selected country for future interactions
+        document.getElementById('submit-export').disabled = false; // Enable the submit button
+    }
+}
+
 // Populate the export selection dropdown with optgroups based on categories
 function populateExportSelector() {
     const exportSelect = document.getElementById('export-select');
@@ -188,17 +196,6 @@ function populateExportSelector() {
         });
 
     document.getElementById('submit-export').disabled = true;
-}
-
-// Handle country selection from the dropdown
-function handleCountrySelection() {
-    const selectedISO = this.value;
-    const countryElement = document.getElementById(selectedISO);
-    if (countryElement) {
-        panZoomInstance.resetZoom();
-        panZoomInstance.zoomAtPointBy(2, { x: countryElement.getBBox().x, y: countryElement.getBBox().y });
-        countryElement.click();
-    }
 }
 
 // Handle export submission and check for correctness
