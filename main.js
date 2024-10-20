@@ -1,230 +1,233 @@
 // main.js
+// This script handles the logic of the country exports game,
+// including map loading, country selection, and export matching.
 
-// Variables to store data
-let panZoom; // Declare panZoom at a higher scope
-let countriesData = []; // From countries_and_exports.json
-let categoriesData = {}; // From categorized_exports.json
-let categoryColors = {}; // Map normalized export name to color
-let exportList = []; // List of all possible exports [{displayName, normalizedName}]
-let exportsMap = {}; // Map normalizedName to displayName
-let selectedCountry = null; // Currently selected country
+// Variables to store game state
+let panZoomInstance;
+let countriesData = [];
+let categoriesData = {};
+let categoryColors = {};
+let exportList = [];
+let exportsMap = {};
+let selectedCountry = null;
+let correctTally = 0;
 
-// Function to load data files
-function loadData() {
-    // Load countries_and_exports.json
+// Function to start the game initialization process
+function initializeGame() {
+    loadGameData();
+}
+
+// Function to load necessary game data (countries and export categories)
+function loadGameData() {
     fetch('countries_and_exports.json')
         .then(response => response.json())
         .then(data => {
-            // Normalize the 'Main Exports' field
-            data.forEach(country => {
-                if (country['Main Exports'] && typeof country['Main Exports'] === 'string') {
-                    country.normalizedExport = country['Main Exports'].trim().toLowerCase();
-                } else {
-                    country.normalizedExport = null; // Set null for countries with no export data
-                }
-            });
-            countriesData = data;
-            // Continue loading categories
-            fetch('categorized_exports.json')
-                .then(response => response.json())
-                .then(data => {
-                    categoriesData = data;
-                    processCategories();
-                    loadSVGMap(); // Start loading the SVG map
-                });
+            countriesData = data.map(normalizeCountryExports);
+            return fetch('categorized_exports.json');
+        })
+        .then(response => response.json())
+        .then(data => {
+            categoriesData = data;
+            processExportCategories();
+            loadMap();
+            initializeSelectorsAndUI();
         });
 }
 
-// Process categories data to build categoryColors and exportList
-function processCategories() {
-    categoryColors = {};
+// Normalize the 'Main Exports' field in each country object
+function normalizeCountryExports(country) {
+    return {
+        ...country,
+        normalizedExport: country['Main Exports'] 
+            ? country['Main Exports'].trim().toLowerCase() 
+            : null
+    };
+}
+
+// Process categories data to create color mappings and export lists
+function processExportCategories() {
     exportList = [];
     exportsMap = {};
-    for (let category in categoriesData) {
-        let details = categoriesData[category];
-        let color = details.color;
-        let products = details.products;
-        for (let product of products) {
-            let productName = product.trim();
-            let normalizedProductName = productName.toLowerCase();
-            categoryColors[normalizedProductName] = color;
-            if (!exportsMap[normalizedProductName]) {
-                exportsMap[normalizedProductName] = productName;
-                exportList.push({ displayName: productName, normalizedName: normalizedProductName });
+    categoryColors = {};
+
+    for (const category in categoriesData) {
+        const { color, products } = categoriesData[category];
+        products.sort().forEach(product => {
+            const normalizedProduct = product.trim().toLowerCase();
+            categoryColors[normalizedProduct] = color;
+
+            if (!exportsMap[normalizedProduct]) {
+                exportsMap[normalizedProduct] = product.trim();
+                exportList.push({ displayName: product.trim(), normalizedName: normalizedProduct });
             }
-        }
+        });
     }
 }
 
-// Function to load the SVG map
-function loadSVGMap() {
+// Load the SVG map and initialize zoom/pan functionality
+function loadMap() {
     fetch('map.svg')
         .then(response => response.text())
         .then(svgText => {
-            // Insert the SVG into the DOM
             document.getElementById('map-container').innerHTML = svgText;
-            initializeMap();
+            initializeMapControls();
+            addGrayStripedPattern();
+            applyCountryStyles();
         });
 }
 
-// Initialize the map after SVG is loaded
-function initializeMap() {
-    // Set up zooming and panning
-    panZoom = svgPanZoom('svg', {
+// Initialize zoom and pan controls for the SVG map
+function initializeMapControls() {
+    panZoomInstance = svgPanZoom('svg', {
         zoomEnabled: true,
-        controlIconsEnabled: false, // Disable built-in controls
+        controlIconsEnabled: false,
         fit: true,
         center: true
     });
 
-    // Add the striped gray pattern to the SVG defs
-    addStripedGrayPattern();
-
-    // Add Tailwind classes to the SVG
-    let svg = document.querySelector('svg');
+    const svg = document.querySelector('svg');
     svg.classList.add('w-full', 'h-full');
-
-    // Ensure the SVG fills the container
-    svg.setAttribute('width', '100%');
-    svg.setAttribute('height', '100%');
     svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+}
 
-    // Add event listeners to country paths
-    let countries = svg.querySelectorAll('[id]');
+// Add gray striped pattern to represent countries with no export data
+function addGrayStripedPattern() {
+    const svg = document.querySelector('svg');
+    const defs = svg.querySelector('defs') || createSVGElement('defs', svg, svg.firstChild);
+    
+    const pattern = createSVGElement('pattern', defs, null, {
+        id: 'stripedGray',
+        patternUnits: 'userSpaceOnUse',
+        width: '4',
+        height: '4'
+    });
+
+    createSVGElement('rect', pattern, null, { width: '4', height: '4', fill: '#808080' });
+    createSVGElement('line', pattern, null, {
+        x1: '0', y1: '0', x2: '4', y2: '4', stroke: 'white', 'stroke-width': '1'
+    });
+}
+
+// Helper function to create an SVG element
+function createSVGElement(tag, parent, beforeChild = null, attributes = {}) {
+    const element = document.createElementNS('http://www.w3.org/2000/svg', tag);
+    Object.keys(attributes).forEach(attr => element.setAttribute(attr, attributes[attr]));
+    parent.insertBefore(element, beforeChild);
+    return element;
+}
+
+// Apply initial styles and event listeners to each country in the SVG map
+function applyCountryStyles() {
+    const countries = document.querySelectorAll('[id]');
     countries.forEach(country => {
-        let countryId = country.getAttribute('id');
-        let countryData = countriesData.find(c => c.ISO_A3 === countryId);
+        const countryId = country.getAttribute('id');
+        const countryData = countriesData.find(c => c.ISO_A3 === countryId);
 
-        // Apply gray stripes if no export data
-        if (!countryData || countryData.normalizedExport === null) {
-            country.setAttribute('style', 'fill: url(#stripedGray)');
-            country.style.cursor = 'not-allowed'; // Change cursor to indicate no selection
+        if (!countryData || !countryData.normalizedExport) {
+            country.style.fill = 'url(#stripedGray)';
+            country.style.cursor = 'not-allowed';
         } else {
-            country.style.cursor = 'pointer'; // Change cursor to pointer for selectable countries
-            country.addEventListener('click', onCountryClick); // Add click event listener only to selectable countries
+            country.style.cursor = 'pointer';
+            country.addEventListener('click', onCountryClick);
         }
     });
-
-    // Initialize the export selector dropdown
-    initExportSelector();
-
-    document.getElementById('reset-map').addEventListener('click', function() {
-        panZoom.reset();
-    });
-
 }
 
-// Function to add the striped gray pattern to the SVG defs
-function addStripedGrayPattern() {
-    let svg = document.querySelector('svg');
-    let defs = svg.querySelector('defs');
-    if (!defs) {
-        defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
-        svg.insertBefore(defs, svg.firstChild);
-    }
-
-    let pattern = document.createElementNS('http://www.w3.org/2000/svg', 'pattern');
-    pattern.setAttribute('id', 'stripedGray');
-    pattern.setAttribute('patternUnits', 'userSpaceOnUse');
-    pattern.setAttribute('width', '4');
-    pattern.setAttribute('height', '4');
-
-    let rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-    rect.setAttribute('width', '4');
-    rect.setAttribute('height', '4');
-    rect.setAttribute('fill', '#808080');
-
-    let line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-    line.setAttribute('x1', '0');
-    line.setAttribute('y1', '0');
-    line.setAttribute('x2', '4');
-    line.setAttribute('y2', '4');
-    line.setAttribute('stroke', 'white');
-    line.setAttribute('stroke-width', '1');
-
-    pattern.appendChild(rect);
-    pattern.appendChild(line);
-    defs.appendChild(pattern);
-}
-
-// Handler for country click
+// Handler for country selection from the map
 function onCountryClick(event) {
-    event.stopPropagation(); // Prevent event from bubbling up
     selectedCountry = event.currentTarget;
-    let countryId = selectedCountry.getAttribute('id');
-
-    // Enable the submit button
+    document.getElementById('country-select').value = selectedCountry.getAttribute('id');
     document.getElementById('submit-export').disabled = false;
-
-    // Get country name using the correct property name
-    let countryData = countriesData.find(c => c.ISO_A3 === countryId);
-    let countryName = countryData ? countryData['Final Display Name'] : 'Unknown Country';
-
-    // Display the selected country name in the status message
-    let statusMessage = document.getElementById('status-message');
-    statusMessage.textContent = 'Selected Country: ' + countryName;
 }
 
-// Initialize the export selector dropdown
-function initExportSelector() {
-    let select = document.getElementById('export-select');
-    // Populate the select options
-    exportList.sort((a, b) => a.displayName.localeCompare(b.displayName)); // Sort the exports
-    exportList.forEach(exportItem => {
-        let option = document.createElement('option');
-        option.value = exportItem.normalizedName;
-        option.textContent = exportItem.displayName;
-        select.appendChild(option);
-    });
+// Initialize UI components (country and export selectors, tally message)
+function initializeSelectorsAndUI() {
+    populateCountrySelector();
+    populateExportSelector();
+    updateTallyMessage();
 
-    // Enable the select; disable the submit button initially
-    select.disabled = false;
+    document.getElementById('submit-export').addEventListener('click', handleExportSubmit);
+}
+
+// Populate the country selection dropdown
+function populateCountrySelector() {
+    const countrySelect = document.getElementById('country-select');
+    countrySelect.innerHTML = '';
+
+    countriesData
+        .filter(country => country['Final Display Name'])
+        .sort((a, b) => a['Final Display Name'].localeCompare(b['Final Display Name']))
+        .forEach(country => {
+            const option = new Option(country['Final Display Name'], country.ISO_A3);
+            countrySelect.appendChild(option);
+        });
+
+    countrySelect.addEventListener('change', handleCountrySelection);
+}
+
+// Populate the export selection dropdown with optgroups based on categories
+function populateExportSelector() {
+    const exportSelect = document.getElementById('export-select');
+    exportSelect.innerHTML = '';
+
+    Object.keys(categoriesData)
+        .sort()
+        .forEach(category => {
+            const optgroup = document.createElement('optgroup');
+            optgroup.label = category;
+
+            categoriesData[category].products.sort().forEach(product => {
+                const normalizedProduct = product.trim().toLowerCase();
+                if (exportsMap[normalizedProduct]) {
+                    const option = new Option(exportsMap[normalizedProduct], normalizedProduct);
+                    optgroup.appendChild(option);
+                }
+            });
+
+            exportSelect.appendChild(optgroup);
+        });
+
     document.getElementById('submit-export').disabled = true;
-
-    // Set initial status message
-    let statusMessage = document.getElementById('status-message');
-    statusMessage.textContent = 'Select a country by clicking on the map.';
-
-    // Add event listener for submit button
-    document.getElementById('submit-export').addEventListener('click', onExportSubmit);
 }
 
-// Handler for export submit
-function onExportSubmit() {
-    if (!selectedCountry) return;
-    let countryId = selectedCountry.getAttribute('id');
-    let selectedExport = document.getElementById('export-select').value;
+// Handle country selection from the dropdown
+function handleCountrySelection() {
+    const selectedISO = this.value;
+    const countryElement = document.getElementById(selectedISO);
+    if (countryElement) {
+        panZoomInstance.resetZoom();
+        panZoomInstance.zoomAtPointBy(2, { x: countryElement.getBBox().x, y: countryElement.getBBox().y });
+        countryElement.click();
+    }
+}
 
-    // Get the country's main export from countriesData
-    let countryData = countriesData.find(c => c.ISO_A3 === countryId);
-    if (!countryData || !countryData.normalizedExport) {
-        // No data for this country
-        // Apply default gray stripes pattern
-        selectedCountry.setAttribute('style', 'fill: url(#stripedGray)');
-        // Display message
-        let statusMessage = document.getElementById('status-message');
-        statusMessage.textContent = 'No data for this country.';
-    } else {
-        let mainExport = countryData.normalizedExport;
-        if (selectedExport === mainExport) {
-            // Correct
-            // Get the color for the export
-            let color = categoryColors[selectedExport] || '#808080'; // Default gray
-            selectedCountry.setAttribute('style', 'fill: ' + color);
-            // Display message
-            let statusMessage = document.getElementById('status-message');
-            statusMessage.textContent = 'Correct!';
-        } else {
-            // Incorrect
-            let statusMessage = document.getElementById('status-message');
-            statusMessage.textContent = 'Incorrect, try again.';
-        }
+// Handle export submission and check for correctness
+function handleExportSubmit() {
+    if (!selectedCountry) return;
+
+    const selectedExport = document.getElementById('export-select').value;
+    const countryId = selectedCountry.getAttribute('id');
+    const countryData = countriesData.find(c => c.ISO_A3 === countryId);
+
+    if (countryData && countryData.normalizedExport === selectedExport) {
+        selectedCountry.style.fill = categoryColors[selectedExport] || '#808080';
+        correctTally++;
     }
 
-    // Reset selectedCountry and disable the submit button
+    updateTallyMessage();
+    resetGameState();
+}
+
+// Update the tally message after each correct match
+function updateTallyMessage() {
+    document.getElementById('tally').textContent = `Correctly Solved Countries: ${correctTally}`;
+}
+
+// Reset the game state after an export is submitted
+function resetGameState() {
     selectedCountry = null;
     document.getElementById('submit-export').disabled = true;
 }
 
-// Start the data loading process
-loadData();
+// Start the game initialization
+initializeGame();

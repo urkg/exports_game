@@ -37,7 +37,7 @@
     {
         "ISO_A3": "ISR",
         "Final Display Name": "Israel",
-        "Main Exports": "Diamonds"
+        "Main Exports": "Polished diamonds"
     },
     {
         "ISO_A3": "PSE",
@@ -71,7 +71,7 @@
     },
     {
         "ISO_A3": "TZA",
-        "Final Display Name": "United Republic of Tanzania",
+        "Final Display Name": "Tanzania",
         "Main Exports": "Gold"
     },
     {
@@ -362,7 +362,7 @@
     {
         "ISO_A3": "IRL",
         "Final Display Name": "Ireland",
-        "Main Exports": "ICT"
+        "Main Exports": "Information and Communication Technologies"
     },
     {
         "ISO_A3": "GBR",
@@ -532,7 +532,7 @@
     {
         "ISO_A3": "HTI",
         "Final Display Name": "Haiti",
-        "Main Exports": "Clothes"
+        "Main Exports": "Clothing"
     },
     {
         "ISO_A3": "DOM",
@@ -882,7 +882,7 @@
     {
         "ISO_A3": "TCA",
         "Final Display Name": "Turks and Caicos Islands",
-        "Main Exports": "Molluscs"
+        "Main Exports": "Shellfish"
     },
     {
         "ISO_A3": "TWN",
@@ -1027,7 +1027,7 @@
     {
         "ISO_A3": "JAM",
         "Final Display Name": "Jamaica",
-        "Main Exports": "Aluminium oxide"
+        "Main Exports": "Aluminium"
     },
     {
         "ISO_A3": "CYM",

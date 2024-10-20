@@ -1,36 +1,63 @@
 {
-    "Metals and Minerals": {
+    "Minerals and energy": {
         "products": [
             "Aluminium",
-            "Aluminium oxide",
+            "Coal",
             "Copper",
             "Diamonds",
+            "Energy",
             "Ferroalloys",
+            "Fertilizers",
             "Gold",
             "Iron",
             "Iron ore",
+            "Petroleum",
             "Platinum",
+            "Stone",
             "Titanium ore",
+            "Water",
             "Zinc"
         ],
-        "color": "#B87333"
+        "color": "#d29b35"
     },
-    "Agriculture and Food": {
+    "Capital-intensive industrial products": {
+        "products": [
+            "Automobile catalysts",
+            "Boats",
+            "Broadcasting equipment",
+            "Car parts",
+            "Cars",
+            "Computers",
+            "Data processing equipment",
+            "Dish washing machines",
+            "Information and Communication Technologies",
+            "Integrated circuits",
+            "Medical instruments",
+            "Packaged medications",
+            "Paper",
+            "Plastic",
+            "Polished diamonds",
+            "Soft drink concentrates",
+            "Vaccines"
+        ],
+        "color": "#6d9eeb"
+    },
+    "Plant and animal products": {
         "products": [
             "Beef",
             "Cashews",
-            "Cigars",
             "Cloves",
             "Cocoa beans",
             "Coconut oil",
             "Coffee",
+            "Cotton",
             "Fish",
             "Goats",
             "Milk",
-            "Molluscs",
             "Olive oil",
             "Palm oil",
             "Pearls",
+            "Rum",
             "Shellfish",
             "Soybean oil",
             "Soybeans",
@@ -39,77 +66,18 @@
             "Tea",
             "Tobacco",
             "Vanilla",
-            "Water",
             "Wood"
         ],
-        "color": "#228B22"
+        "color": "#93c47d"
     },
-    "Energy": {
+    "Labour-intensive industrial products": {
         "products": [
-            "Coal",
-            "Petroleum",
-            "Energy"
-        ],
-        "color": "#FFD700"
-    },
-    "Textiles and Clothing": {
-        "products": [
-            "Clothes",
+            "Cigars",
             "Clothing",
             "Footwear",
-            "Cotton"
+            "Insulated wire",
+            "Jewelry"
         ],
-        "color": "#FF69B4"
-    },
-    "Machinery and Electronics": {
-        "products": [
-            "Broadcasting equipment",
-            "Car parts",
-            "Cars",
-            "Computers",
-            "Data processing equipment",
-            "Dish washing machines",
-            "Integrated circuits",
-            "Medical instruments",
-            "Insulated wire"
-        ],
-        "color": "#4682B4"
-    },
-    "Pharmaceuticals and Chemicals": {
-        "products": [
-            "Fertilizers",
-            "Packaged medications",
-            "Vaccines",
-            "Soft drink concentrates"
-        ],
-        "color": "#FF6347"
-    },
-    "Luxury Goods and Jewelry": {
-        "products": [
-            "Automobile catalysts",
-            "Jewelry",
-            "Rum"
-        ],
-        "color": "#8B4513"
-    },
-    "Paper and Packaging": {
-        "products": [
-            "Paper",
-            "Plastic"
-        ],
-        "color": "#D3D3D3"
-    },
-    "Transport and Ships": {
-        "products": [
-            "Boats"
-        ],
-        "color": "#1E90FF"
-    },
-    "Other": {
-        "products": [
-            "ICT",
-            "Stone"
-        ],
-        "color": "#808080"
+        "color": "#e06666"
     }
 }

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Country Exports Game</title>
     <meta charset="UTF-8">
-    <!-- Include Tailwind CSS via CDN -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Exports Game</title>
+    <link rel="icon" href="data:,">
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Ensure no default margins and height is 100% -->
     <style>
         html, body {
             height: 100%;
@@ -16,22 +16,21 @@
 <body class="flex flex-col h-full">
     <div id="map-container" class="flex-1 relative overflow-hidden">
         <!-- The SVG map will be loaded here -->
-        <!-- Add the reset button -->
-        <button id="reset-map" class="absolute bottom-20 right-4 bg-white text-black border border-gray-300 rounded px-4 py-2 shadow-lg z-10">Reset Map</button>
+    </div>
+    <div id="tally-message" class="w-full bg-white p-4 border-b border-black z-50 flex items-center justify-center space-x-4 text-lg font-semibold">
+        <div id="tally"></div>
     </div>
     <div id="export-selector" class="w-full bg-white p-4 border-t border-black z-50 flex items-center justify-center space-x-4">
-        <!-- Div to display the selected country name and messages -->
-        <div id="status-message" class="text-lg font-semibold"></div>
-        <!-- Adjust the label and controls -->
+        <label for="country-select" class="mr-2">Select Country:</label>
+        <select id="country-select" class="w-52 p-2 border border-gray-300 rounded"></select>
+
         <label for="export-select" class="mr-2">Select Main Export:</label>
-        <select id="export-select" class="w-52 p-2 border border-gray-300 rounded">
-            <!-- Options will be populated dynamically -->
-        </select>
-        <button id="submit-export" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:opacity-50" disabled="disabled">Submit</button>
+        <select id="export-select" class="w-52 p-2 border border-gray-300 rounded"></select>
+
+        <button id="submit-export" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:opacity-50" disabled>Submit</button>
     </div>
-    <!-- Include the svg-pan-zoom library -->
+    <!-- Include external scripts -->
     <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.5.0/dist/svg-pan-zoom.min.js"></script>
-    <!-- Include our script -->
     <script src="main.js"></script>
 </body>
 </html>
