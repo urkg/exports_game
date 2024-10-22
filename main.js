@@ -177,27 +177,19 @@ function handleCountrySelection() {
     }
 }
 
-// Populate the export selection dropdown with optgroups based on categories
+// Populate the export selection dropdown
 function populateExportSelector() {
     const exportSelect = document.getElementById('export-select');
     exportSelect.innerHTML = '';
 
-    Object.keys(categoriesData)
-        .sort()
-        .forEach(category => {
-            const optgroup = document.createElement('optgroup');
-            optgroup.label = category;
+    // Sort the exportList alphabetically by displayName
+    exportList.sort((a, b) => a.displayName.localeCompare(b.displayName));
 
-            categoriesData[category].products.sort().forEach(product => {
-                const normalizedProduct = product.trim().toLowerCase();
-                if (exportsMap[normalizedProduct]) {
-                    const option = new Option(exportsMap[normalizedProduct], normalizedProduct);
-                    optgroup.appendChild(option);
-                }
-            });
-
-            exportSelect.appendChild(optgroup);
-        });
+    // Create a flat list of options without grouping
+    exportList.forEach(exportItem => {
+        const option = new Option(exportItem.displayName, exportItem.normalizedName);
+        exportSelect.appendChild(option);
+    });
 
     document.getElementById('submit-export').disabled = true;
 }
